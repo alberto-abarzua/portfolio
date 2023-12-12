@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  site:
+    build: .
+    stop_grace_period: 5s
+    volumes:
+      - ./src:/app/src
+      - ./index.html:/app/index.html
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./tailwind.config.js:/app/tailwind.config.js
+      - ./components.json:/app/components.json
+      - ./postcss.config.js:/app/postcss.config.js
+    ports:
+      - "3000:3000"

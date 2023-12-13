@@ -18,7 +18,10 @@ module.exports = {
         },
         extend: {
             backgroundImage: {
-                'noise': "url('/images/tailwind/noise.png')",
+                noise: "url('/images/tailwind/noise.png')",
+            },
+            fontFamily: {
+                sans: ['ui-monospace', 'SFMono-Regular'],
             },
             colors: {
                 border: 'hsl(var(--border))',

@@ -20,11 +20,11 @@ import GithubActionsSvg from '@/assets/svgs/githubactions.svg';
 import CloudSvg from '@/assets/svgs/cloud.svg';
 import SqlSvg from '@/assets/svgs/sql.svg';
 import PyTorchSvg from '@/assets/svgs/pytorch.svg';
-
+import LinuxSvg from '@/assets/svgs/linux.svg';
 const About = () => {
     return (
-        <div className="flex h-full w-full flex-col justify-center p-2 lg:p-10  font-mono lg:w-3/4">
-            <h2 className="my-4 mt-20 text-3xl font-bold">[About Me]</h2>
+        <div className="flex h-full w-full flex-col justify-center p-2 ease-in font-mono duration-[350] animate-in fade-in  lg:w-3/4 lg:p-10">
+            <h2 className="my-4 mt-20 text-3xl font-bold ">[About Me]</h2>
             <p>
                 A full-stack developer passionate about end-to-end technology solutions. I love
                 learning new things and applying them creatively in my projects, spanning from web
@@ -33,7 +33,7 @@ const About = () => {
 
             <h2 className="my-4 text-3xl font-bold">[Skills]</h2>
 
-            <div className="flex flex-col justify-center lg:px-10 lg:flex-row gap-x-7">
+            <div className="flex flex-col justify-center gap-x-7 duration-700 ease-in animate-in fade-in lg:flex-row  lg:px-10">
                 <div className="flex w-fit flex-col gap-y-2">
                     <h3 className="my-5 text-xl font-bold">Programming Languages / Frameworks</h3>
                     <SkillSet label="Python" svg={PythonSvg} score={5}>
@@ -54,6 +54,7 @@ const About = () => {
                 </div>
                 <div className="flex w-fit flex-col gap-y-2">
                     <h3 className="my-5 text-xl font-bold">Tools / Others</h3>
+                    <SkillSet label="Linux" svg={LinuxSvg} score={5}></SkillSet>
                     <SkillSet label="Git" svg={GitSvg} score={4}></SkillSet>
                     <SkillSet label="GitHub" svg={GithubSvg} score={5}>
                         <SkillSet

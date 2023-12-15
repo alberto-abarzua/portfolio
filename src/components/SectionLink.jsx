@@ -1,14 +1,16 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const SectionLink = ({ label, path }) => {
+const SectionLink = ({ label, path, className }) => {
     return (
         <Link to={path}>
-            <button className="p-4 group">
+            <button
+                className={`${className} group transform p-4 animate-in fade-in-0 duration-100 slide-in-from-top `}
+            >
                 <h2 className="cursor-pointer font-mono text-2xl">
-                    <span className="group-hover:text-green-700 font-bold">&lt;</span>
+                    <span className="font-bold group-hover:text-green-700">&lt;</span>
                     <span className="group-hover:text-gray-600">{label}</span>
-                    <span className="group-hover:text-green-700 font-bold ">/&gt;</span>
+                    <span className="font-bold group-hover:text-green-700 ">/&gt;</span>
                 </h2>
             </button>
         </Link>
@@ -17,8 +19,8 @@ const SectionLink = ({ label, path }) => {
 
 SectionLink.propTypes = {
     label: PropTypes.string.isRequired,
-    path: PropTypes.string.isRequired
+    path: PropTypes.string.isRequired,
+    className: PropTypes.string,
 };
 
 export default SectionLink;
-

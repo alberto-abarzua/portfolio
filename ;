@@ -130,7 +130,7 @@ const Projects = () => {
                         Live Website
                     </a>
                     <a
-                        className=" w-fit rounded-lg  bg-gray-100 bg-opacity-80 px-3 py-2 text-xl italic text-blue-900 hover:bg-opacity-90 hover:text-blue-900"
+                        className=" w-fit rounded-md bg-gray-100 bg-opacity-60 px-3 py-2 text-xl italic text-blue-900 underline underline-offset-2 hover:bg-opacity-90 hover:text-blue-900"
                         href="https://github.com/alberto-abarzua/apunte-iot-embebidos"
                         target="_blank"
                     >

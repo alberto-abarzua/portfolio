@@ -2,6 +2,7 @@ import SectionLink from '@/components/SectionLink';
 import { useOutlet } from 'react-router-dom';
 import Nav from '@/components/nav/Nav';
 import GithubSvg from '@/assets/svgs/github.svg';
+import CdSvg from '@/assets/svgs/cd.svg';
 
 export default function Root() {
     let Outlet = useOutlet();
@@ -15,9 +16,13 @@ export default function Root() {
             {Outlet ? (
                 Outlet
             ) : (
-                <div className="flex h-screen flex-col items-center justify-center text-black">
-                    <h1 className="mb-5 font-mono text-5xl font-bold">W3lcome</h1>
-
+                <div className="flex h-screen flex-col items-center text-black">
+                    <img
+                        src={CdSvg}
+                        alt="cd"
+                        className="mt-20 w-72 duration-300 animate-in spin-in slide-in-from-right-44"
+                    />
+                    <h1 className="mb-5 font-mono text-4xl font-bold">My Portfolio</h1>
                     <p className="mb-3 font-mono text-lg">
                         By: <span className="font-bold">Alberto Abarzúa</span>
                     </p>
@@ -27,13 +32,13 @@ export default function Root() {
                         <span className="font-bold">&&</span> Computer Science Engineer
                     </p>
                     <div className="mt-40 flex flex-col items-center justify-center gap-x-10 lg:flex-row">
-                        <SectionLink label="About & Skills" path="about" />
-                        <SectionLink label="Proj3cts" path="/projects/" />
-                        <SectionLink label="Contact" path="/contact/" />
+                        <SectionLink className="delay-75" label="About & Skills" path="about"/>
+                        <SectionLink className="delay-150" label="Projects" path="/projects/" />
+                        <SectionLink className="delay-300" label="Contact" path="/contact/" />
                     </div>
                 </div>
             )}
-            <footer className="flex flex-row gap-10 h-20 w-full items-center justify-center bg-gray-300 bg-opacity-90">
+            <footer className="flex h-20 w-[80%] flex-row items-center justify-center gap-10 bg-gray-300 bg-opacity-90">
                 <p className="font-mono text-sm">
                     Made with{' '}
                     <span role="img" aria-label="heart">
@@ -46,7 +51,6 @@ export default function Root() {
                     <a href="https://github.com/alberto-abarzua" target="_blank">
                         My Github
                     </a>
-
                 </div>
                 <div></div>
             </footer>

@@ -5,7 +5,7 @@ const SectionLink = ({ label, path, className }) => {
     return (
         <Link to={path}>
             <button
-                className={`${className} group transform p-4 animate-in fade-in-0 duration-100 slide-in-from-top `}
+                className={`${className} group transform p-4 duration-100 animate-in fade-in-0 slide-in-from-top `}
             >
                 <h2 className="cursor-pointer font-mono text-2xl">
                     <span className="font-bold group-hover:text-green-700">&lt;</span>

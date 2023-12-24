@@ -6,7 +6,7 @@ const Nav = ({ className }) => {
             className={`fixed top-0 flex w-full items-center bg-gray-300 bg-opacity-90 ${className}`}
         >
             <NavButton label="Index" path="/" />
-            <div>|</div>
+            <div className = "hidden lg:block">|</div>
             <NavButton className="hidden lg:block" label="About" path="/about/" />
             <NavButton className="hidden lg:block" label="Proj3cts" path="/projects/" />
             <NavButton className="hidden lg:block" label="Contact" path="/contact/" />

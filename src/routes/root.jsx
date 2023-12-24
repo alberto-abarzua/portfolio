@@ -7,7 +7,7 @@ import CdSvg from '@/assets/svgs/cd.svg';
 export default function Root() {
     let Outlet = useOutlet();
     return (
-        <div className="animate-noise flex w-full flex-col items-center  bg-gray-300  bg-opacity-90  bg-noise bg-repeat">
+        <div className="animate-noise flex w-full flex-col items-center  bg-neutral-300  bg-opacity-90  bg-noise bg-repeat">
             <Nav
                 className={`transform transition-all duration-300 ${
                     !Outlet ? '-translate-y-full' : ''

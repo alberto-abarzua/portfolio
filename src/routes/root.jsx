@@ -16,7 +16,7 @@ export default function Root() {
             {Outlet ? (
                 Outlet
             ) : (
-                <div className="flex h-full flex-col items-center text-black lg:h-screen">
+                <div className="flex h-screen flex-col items-center text-black lg:h-screen">
                     <img
                         src={CdSvg}
                         alt="cd"
@@ -31,14 +31,14 @@ export default function Root() {
                         <span className="font-bold">Full Stack</span> Developer{' '}
                         <span className="font-bold">&&</span> Computer Science Engineer
                     </p>
-                    <div className="mt-40 flex flex-col items-center justify-center gap-x-10 lg:flex-row">
+                    <div className="mt-16 flex flex-col items-center justify-center gap-x-10 lg:mt-40 lg:flex-row">
                         <SectionLink className="delay-75" label="About & Skills" path="about" />
                         <SectionLink className="delay-150" label="Projects" path="/projects/" />
                         <SectionLink className="delay-300" label="Contact" path="/contact/" />
                     </div>
                 </div>
             )}
-            <footer className="flex h-20 w-[80%] flex-row items-center justify-center gap-10 bg-gray-300 bg-opacity-90">
+            <footer className="flex h-20 w-full flex-row items-center justify-center gap-10 bg-gray-300 bg-opacity-60 px-4">
                 <p className="font-mono text-sm">
                     Made with{' '}
                     <span role="img" aria-label="heart">

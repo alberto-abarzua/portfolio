@@ -33,7 +33,7 @@ const About = () => {
 
             <h2 className="my-4 text-3xl font-bold">[Skills]</h2>
 
-            <div className="flex flex-col justify-center gap-x-7 duration-700 ease-in animate-in fade-in lg:flex-row  lg:px-10">
+            <div className="flex flex-col justify-center gap-x-7 lg:gap-x-20 duration-700 ease-in animate-in fade-in lg:flex-row  lg:px-10">
                 <div className="flex w-fit flex-col gap-y-2">
                     <h3 className="my-5 text-xl font-bold">Programming Languages / Frameworks</h3>
                     <SkillSet label="Python" svg={PythonSvg} score={5}>

@@ -1,7 +1,7 @@
 services:
   remote:
     ports:
-    - 127.0.0.1:53767:22
+    - 127.0.0.1:33379:22
     volumes:
-    - /home/albertoa/git-local/portfolio:/workspace
+    - /home/alberto/git-local/portfolio:/workspace
 version: '3.8'

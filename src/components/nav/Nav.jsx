@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Nav = ({ className }) => {
     return (
         <nav
-            className={`fixed top-0 flex w-full items-center bg-gray-300 bg-opacity-50 ${className}`}
+            className={`fixed top-0 flex w-full items-center bg-gray-300 bg-opacity-60 ${className}`}
         >
             <NavButton label="Index" path="/" />
             <div className = "hidden lg:block">|</div>

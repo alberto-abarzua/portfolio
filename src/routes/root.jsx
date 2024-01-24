@@ -7,7 +7,7 @@ import CdSvg from '@/assets/svgs/cd.svg';
 export default function Root() {
     let Outlet = useOutlet();
     return (
-        <div className="animate-noise flex w-full flex-col items-center  bg-neutral-300  bg-opacity-90  bg-noise bg-repeat">
+        <div className="animate-noise min-h-screen h-full flex w-full flex-col items-center  bg-neutral-300  bg-opacity-90  bg-noise bg-repeat">
             <Nav
                 className={`transform transition-all duration-300 ${
                     !Outlet ? '-translate-y-full' : ''
@@ -16,7 +16,7 @@ export default function Root() {
             {Outlet ? (
                 Outlet
             ) : (
-                <div className="flex h-screen flex-col items-center text-black lg:h-screen">
+                <div className="flex h-full flex-col items-center text-black lg:h-screen">
                     <img
                         src={CdSvg}
                         alt="cd"
@@ -31,7 +31,7 @@ export default function Root() {
                         <span className="font-bold">Full Stack</span> Developer{' '}
                         <span className="font-bold">&&</span> Computer Science Engineer
                     </p>
-                    <div className="mt-16 flex flex-col items-center justify-center gap-x-10 lg:mt-40 lg:flex-row">
+                    <div className="mb flex flex-col items-center justify-center gap-x-10 lg:mt-40 lg:flex-row">
                         <SectionLink className="delay-75" label="About & Skills" path="about" />
                         <SectionLink className="delay-150" label="Projects" path="/projects/" />
                         <SectionLink className="delay-300" label="Contact" path="/contact/" />

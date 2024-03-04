@@ -8,7 +8,7 @@ const Nav = ({ className }) => {
             <NavButton label="Index" path="/" />
             <div className = "hidden lg:block">|</div>
             <NavButton className="hidden lg:block" label="About" path="/about/" />
-            <NavButton className="hidden lg:block" label="Proj3cts" path="/projects/" />
+            <NavButton className="hidden lg:block" label="Projects" path="/projects/" />
             <NavButton className="hidden lg:block" label="Contact" path="/contact/" />
         </nav>
     );

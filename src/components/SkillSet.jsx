@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 const SkillSet = ({ label, svg, score, children }) => {
     return (
-        <div className="flex w-full flex-col rounded-md bg-gray-400 bg-opacity-40 p-4">
+        <div className="flex w-full flex-col rounded-md bg-gray-400/30 p-4">
             <div className="flex items-center justify-start gap-x-2">
                 <img src={svg} alt={label} className="h-7 w-7" />
                 <p className="text">{label}</p>
@@ -24,7 +24,7 @@ const SkillSet = ({ label, svg, score, children }) => {
                 </div>
             </div>
             {children && <br />}
-            <div className="flex scale-95 transform flex-col gap-y-2">{children}</div>
+            <div className="flex scale-[0.85] transform flex-col gap-y-2">{children}</div>
         </div>
     );
 };

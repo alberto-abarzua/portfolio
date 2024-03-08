@@ -4,12 +4,12 @@ import GithubSVG from '@/assets/svgs/github.svg';
 const Contact = () => {
     return (
         <>
-            <div className="z-30 relative overflow-hidden isolate flex h-full min-h-screen w-full flex-col items-center justify-center text-white duration-300 animate-in fade-in slide-in-from-right">
+            <div className="relative isolate z-30 flex h-full min-h-screen w-full flex-col items-center justify-center overflow-hidden text-white duration-300 animate-in fade-in slide-in-from-right">
                 <h1 className="mb-5 font-mono text-5xl font-bold">Contact</h1>
                 <p className="justifiy-center flex flex-row items-center font-mono text-lg">
                     <img src={EmailSVG} alt="Email" className="mr-2 h-7 w-7 invert" />
-                    <span className="bg-blend-hue-180 mr-1 font-bold"> Email: </span>contact [at]
-                    b3to [dot] dev
+                    <span className="bg-blend-hue-180 mr-1 font-bold"> Email: </span>
+                    <span className="lg:text-md text-sm  ">contact [at] b3to [dot] dev</span>
                 </p>
                 <p className="justifiy-center flex flex-row items-center font-mono text-lg">
                     <img src={GithubSVG} alt="Github" className="mr-2 h-6 w-6 invert" />

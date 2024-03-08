@@ -36,7 +36,7 @@ const ProjectCard = ({ title, liveDocs, githubRepo, liveSite, description, tags,
                 )}
             </div>
 
-            <div className="flex flex-col items-start justify-center gap-4 py-2 lg:flex-row">
+            <div className="flex flex-col items-start justify-center gap-5 py-2 lg:flex-row">
                 <div className="w-[80%]">
                     <p>{description}</p>
                     <div className="mt-4 flex flex-row flex-wrap gap-2">
@@ -45,7 +45,7 @@ const ProjectCard = ({ title, liveDocs, githubRepo, liveSite, description, tags,
                         ))}
                     </div>
                 </div>
-                <div className=" h-[230px] w-full lg:w-1/2 ">
+                <div className=" h-[230px] w-full overflow-hidden rounded-md lg:w-1/2 ">
                     <img
                         src={image.src}
                         alt={image.alt}

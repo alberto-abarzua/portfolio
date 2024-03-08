@@ -4,7 +4,7 @@ import GithubSVG from '@/assets/svgs/github.svg';
 const Contact = () => {
     return (
         <>
-            <div className=" flex h-screen w-full flex-col items-center justify-center text-white duration-300 animate-in fade-in slide-in-from-right">
+            <div className=" flex h-full min-h-screen w-full flex-col items-center justify-center text-white duration-300 animate-in fade-in slide-in-from-right">
                 <h1 className="mb-5 font-mono text-5xl font-bold">Contact</h1>
                 <p className="justifiy-center flex flex-row items-center font-mono text-lg">
                     <img src={EmailSVG} alt="Email" className="mr-2 h-7 w-7 invert" />

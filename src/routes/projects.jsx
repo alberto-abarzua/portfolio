@@ -19,8 +19,8 @@ import InertialImg from '@/assets/images/inertial.png';
 
 const Projects = () => {
     return (
-        <div className="flex h-full w-full flex-col justify-start gap-y-10 p-10 font-mono lg:w-3/4">
-            <h2 className="mt-10 text-white text-4xl font-bold duration-150 animate-in fade-in">
+        <div className="flex h-full w-full flex-col justify-start gap-y-10 lg:p-10 font-mono lg:w-3/4">
+            <h2 className=" text-white text-4xl font-bold duration-150 animate-in fade-in">
                 [My Projects]
             </h2>
 

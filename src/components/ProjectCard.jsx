@@ -4,7 +4,7 @@ import SkillTag from './SkillTag';
 
 const ProjectCard = ({ title, liveDocs, githubRepo, liveSite, description, tags, image }) => {
     return (
-        <div className="rounded-md border-gray-300 bg-slate-800/50 px-4 py-4 text-white bg-blend-overlay shadow-lg drop-shadow-lg duration-500 animate-in fade-in lg:px-12">
+        <div className="rounded-md h-full border-gray-300 bg-slate-800/40 px-4 py-4 text-white bg-blend-overlay shadow-lg drop-shadow-lg duration-500 animate-in fade-in lg:px-12">
             <div className="my-2 flex flex-wrap items-center justify-start gap-4">
                 <h3 className="text-2xl font-bold">{title}</h3>
                 {liveDocs && (
@@ -37,7 +37,7 @@ const ProjectCard = ({ title, liveDocs, githubRepo, liveSite, description, tags,
             </div>
 
             <div className="flex flex-col items-start justify-center gap-4 py-2 lg:flex-row">
-                <div>
+                <div className='w-[80%]'>
                     <p>{description}</p>
                     <div className="mt-4 flex flex-row flex-wrap gap-2">
                         {tags.map((tag, index) => (
@@ -45,11 +45,13 @@ const ProjectCard = ({ title, liveDocs, githubRepo, liveSite, description, tags,
                         ))}
                     </div>
                 </div>
-                <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full rounded-lg object-cover opacity-90 shadow-sm shadow-gray-400 duration-300 animate-in slide-in-from-right lg:w-5/12"
-                />
+                <div className=" h-[230px] w-1/2 bg-red-200">
+                    <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="h-full w-full object-cover opacity-90 duration-300 animate-in slide-in-from-right "
+                    />
+                </div>
             </div>
         </div>
     );

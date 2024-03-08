@@ -23,7 +23,7 @@ import PyTorchSvg from '@/assets/svgs/pytorch.svg';
 import LinuxSvg from '@/assets/svgs/linux.svg';
 const About = () => {
     return (
-        <div className="duration-[350] flex h-full w-full flex-col justify-center p-2 font-mono ease-in animate-in fade-in  lg:w-3/4 lg:p-10">
+        <div className="duration-[350] text-white flex h-full w-full flex-col justify-center p-2 font-mono ease-in animate-in fade-in  lg:w-3/4 lg:p-10">
             <h2 className="my-4 mt-20 text-3xl font-bold ">[About Me]</h2>
             <p>
                 A full-stack developer passionate about end-to-end technology solutions. I love

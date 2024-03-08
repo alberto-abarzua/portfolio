@@ -45,7 +45,7 @@ const ProjectCard = ({ title, liveDocs, githubRepo, liveSite, description, tags,
                         ))}
                     </div>
                 </div>
-                <div className=" h-[230px] w-1/2 bg-red-200">
+                <div className=" h-[230px] w-1/2 ">
                     <img
                         src={image.src}
                         alt={image.alt}

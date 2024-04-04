@@ -65,7 +65,7 @@ const Projects = () => {
             <ProjectCard
                 title="IoT Course Handbook"
                 liveSite="https://iiot-embedded.com/"
-                githubRepo="https://github.com/alberto-abarzua/apunte-iot-embebidos"
+                githubRepo="https://github.com/inertial-metrics/apunte-iot-embebidos"
                 description="This project involves the creation of a comprehensive guide for the Internet of Things course at DCC, Universidad de Chile, where I contributed as an assistant teacher. The guide is designed to provide students with an in-depth understanding of IoT concepts and applications."
                 tags={[{ label: 'Hugo + Docs', svg: HugoSvg }]}
                 image={{ src: ApunteIotImg, alt: 'Peridash img' }}

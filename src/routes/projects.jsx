@@ -45,8 +45,6 @@ const Projects = () => {
 
             <ProjectCard
                 title="Peridash: Real-Time Stock Price Dashboard"
-                githubRepo="https://github.com/alberto-abarzua/peridash"
-                liveSite="https://peridash.com/"
                 description="Peridash is a stock monitoring dashboard utilizing the Twelve Data API for live market data. Initially built with React, TailwindCSS, and Django REST, featuring PostgreSQL and Memcached, deployed via Docker and Kubernetes on Linode. The architecture has since evolved to Supabase for backend operations, simplifying deployment and reducing costs, while retaining its core functionalities."
                 tags={[
                     { label: 'Python', svg: PythonSvg },

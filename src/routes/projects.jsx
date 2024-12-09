@@ -71,7 +71,7 @@ const Projects = () => {
 
             <ProjectCard
                 title="Custom Freelance Project"
-                liveSite="https://inertialmetrics.com"
+                liveSite="https://www.inertialmetrics.com"
                 description="This project was developed for a freelance client to highlight their services and portfolio through a comprehensive website. It's crafted to engage potential customers by showcasing the client's capabilities and includes a contact form for easy communication. Additional features include a user-friendly dashboard, a dynamic blog, and custom Markdown rendering for straightforward content updates. Developed with React for the frontend and Supabase for the backend, the project delivers a seamless user experience alongside efficient data management."
                 tags={[
                     { label: 'React', svg: ReactSvg },
